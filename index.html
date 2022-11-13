@@ -1,22 +1,181 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práctica HTML y CSS | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <title>Práctica HTML & CSS | Portfolio</title>
 </head>
+
 <body>
     <header>
-        <nav>
-            
-        </nav>
+        <div class="top-bar">
+            <div class="logo-area">
+                <img src="./img/nav-logo.png" alt="computer icon" />
+                <span>Naranjito & Co.</span>
+            </div>
+            <nav>
+                <div class="dropdown-top">
+                    <button class="dropdown-top-button">Menu</button>
+                    <div class="dropdown-top-content">
+                        <a href="#portfolio" class="nav-link" id="nav-link-portfolio" title="Portfolio">Porfolio</a>
+                        <a href="#skills" class="nav-link" id="nav-link-skills" title="Skills">Skills</a>
+                        <a href="#contact" class="nav-link" id="nav-link-contact" title="Contact">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="intro">
+            <h1>Naranjito & Co.</h1>
+        </div>
     </header>
-    <main>
-        <article>
+    <main class="main">
+        <section id="portfolio" class="section">
+            <article class="about">
+                <h2>¿Quiénes somos</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, sit molestiae? Quis sed tempora at
+                    fugiat ipsam nostrum nemo quia, provident perferendis soluta velit inventore, tempore corrupti totam
+                    debitis repellendus!</p>
+                <p class="extra-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa exercitationem nisi
+                    earum, dicta quasi, culpa illum ducimus eveniet officia provident aspernatur, itaque quod quibusdam
+                    non quidem veritatis quis accusantium consectetur. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Dolores doloribus aliquam repellendus quos praesentium odit vero minima eos ipsa,
+                    expedita iure aut eum magni vitae ratione necessitatibus, est aperiam. Quis. Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Unde aliquid vel voluptates, ex a sapiente sequi eius autem
+                    provident nesciunt ipsum temporibus quidem, iusto impedit dolore. Explicabo nulla reiciendis ullam!
+                </p>
+            </article>
+        </section>
+        <section class="projects">
+            <article>
+                <img class="project-img" src="./img/naranjito-lino.jpg" alt="Gato Naranjito con gato Lino">
+                <p>Lino y Naranjito</p>
+            </article>
+            <article>
+                <img class="project-img" src="./img/naranjito-ojos-cerrados.jpg" alt="Gato Naranjito con los ojos cerrados">
+                <p>Naranjito de siesta</p>
+            </article>
+            <article>
+                <img class="project-img" src="./img/naranjito.jpg" alt="Gato naranjito en ordenador">
+                <p>Naranjito codeando</p>
+            </article>
+        </section>
+        <section id="skills" class="section">
 
-        </article>
+            <h3>Skills</h3>
+
+            </article>
+
+            <span>HTML</span>
+            <div class="skill">
+                <div class="skill-progress" id="skill-html"></div>
+            </div>
+
+            <span>CSS</span>
+            <div class="skill">
+                <div class="skill-progress" id="skill-css"></div>
+            </div>
+
+            <span>Javascript</span>
+            <div class="skill">
+                <div class="skill-progress" id="skill-javascript"></div>
+            </div>
+
+            <span>Python</span>
+            <div class="skill">
+                <div class="skill-progress" id="skill-python"></div>
+            </div>
+
+
+        </section>
+
+        <section id="contact" class="section">
+            <h3>¿Quieres contactar con nosotros?</h3>
+
+            <form action="/response/form_response.html" method="post">
+                <section class="form-container">
+                    <span>
+                        <label for="name">Nombre: </label>
+                        <input required id="name" name="name" type="text" placeholder="Nombre">
+                    </span>
+                    <span>
+                        <label for="lastName">Apellido/s: </label>
+                        <input required id="lastName" name="lastName" type="text" placeholder="Apellido/s">
+                    </span>
+                    <span>
+                        <label for="phoneNumber">Teléfono: </label>
+                        <input required id="phoneNumber" name="phoneNumber" type="phone" placeholder="Número de Teléfono"
+                            pattern="[0-9]{9}">
+                    </span>
+                    <span>
+                        <label for="gitHub">Usuario de GitHub: </label>
+                        <input id="gitHub" name="gitHub" type="text" placeholder="@<username>" pattern="^@[^\s]+">
+                    </span>
+                </section>
+                
+                <div>
+                    <h4>¿Cómo nos conociste?</h4>
+                </div>
+                
+                <div>
+                    <input required id="uni" type="radio" name="meet" value="recomendation">
+                    <label for="recomendation">Recomendación de otra persona</label>
+                </div>
+                <div>
+                    <input required id="keepcoding" type="radio" name="meet" value="keepcoding">
+                    <label for="keepcoding">KeepCoding</label>
+                </div>
+                <div>
+                    <input required id="gitHubField" type="radio" name="meet" value="net">
+                    <label for="gitHubField">GitHub</label>
+                </div>
+                <div>
+                    <input required id="school" type="radio" name="meet" value="other">
+                    <label for="other">Otro</label>
+                </div>
+
+                <label for="message">Mensaje: </label>
+                <textarea id="message" name="message" maxlength="300"
+                    placeholder="Escribe aquí tu mensaje (máximo 300 caracteres)"></textarea>
+
+                <input type="submit" name="submit" value="Enviar">
+
+            </form>
+
+        </section>
+
     </main>
-    <footer></footer>
+
+    <footer class="footer">
+
+        <a href="#" target="_blank">
+            <svg class="social-media" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                <path
+                    d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z" />
+            </svg>
+        </a>
+
+        <a href="#" target="_blank">
+            <svg class="social-media" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 455 455"
+                style="enable-background:new 0 0 455 455;" xml:space="preserve">
+                <g>
+                    <path style="fill-rule:evenodd;clip-rule:evenodd;"
+                        d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z" />
+                    <path style="fill-rule:evenodd;clip-rule:evenodd;"
+                        d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z    M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087   c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345   c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537   c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002   z" />
+                </g>
+            </svg>
+        </a>
+
+
+    </footer>
+
 </body>
+
 </html>
