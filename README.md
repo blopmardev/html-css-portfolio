@@ -17,13 +17,13 @@ El objetivo de esta práctica consiste en crear un portfolio que incluya las sig
 - **Header** con imagen de fondo optimizada para distintas resoluciones (opcional)
 - Sección con **skills de programación** y su progresoen forma de barras de progreso animadas con CSS
 - **Formulario de contacto** con inputs siguientes:
-| **_Nombre_** (requerido)
-| **_Apellidos_** (requerido)
-| **_Teléfono_** (requerido)
-| **_¿Cómo me conociste?_** (requerido, con radio-buttons para contestar (universidad, keepcoding kick-off, colegio, github)
-| **_Tag de Github_** (con expresión regular para validación del @username)
-| **_Descripción_** (requerido, máx. 180 caracteres)
-| **_Save button_**
+    - **_Nombre_** (requerido)
+    - **_Apellidos_** (requerido)
+    - **_Teléfono_** (requerido)
+    - **_¿Cómo me conociste?_** (requerido, con radio-buttons para contestar (universidad, keepcoding kick-off, colegio, github
+    - **_Tag de Github_** (con expresión regular para validación del @username)
+    - **_Descripción_** (requerido, máx. 180 caracteres)
+    - **_Save button_**
 - **Footer** con links externos a las redes sociales (cuidar no dejar nuestros datos en esas redes por ser externas)
 
 ***
