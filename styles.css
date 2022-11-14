@@ -443,8 +443,8 @@ BIGGER SCREENS SETTINGS
     form {
         width: 50%;
         margin: 0 auto;
-        border: 2px solid var(--secondary-color)
-        min-width: 500px;
+        border: 2px solid var(--secondary-color);
+        width: 100%;
     }
 
     #contact , #skills {
