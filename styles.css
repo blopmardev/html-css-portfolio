@@ -441,10 +441,11 @@ BIGGER SCREENS SETTINGS
     }
 
     form {
-        width: 50%;
         margin: 0 auto;
         border: 2px solid var(--secondary-color);
         width: 100%;
+        background: var(--light-grey);
+        padding: 5rem;
     }
 
     #contact , #skills {
